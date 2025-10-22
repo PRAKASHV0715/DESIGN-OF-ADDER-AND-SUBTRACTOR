@@ -42,11 +42,15 @@ Borrow out = A'Bin + A'B + BBin
 
 <img width="732" height="687" alt="Screenshot 2025-10-22 115302" src="https://github.com/user-attachments/assets/d8c6f432-27a8-4c14-8344-509f4c518067" />
 
-
+```
 **Procedure**
+Full Adder:
+1.Open Quartus II and create a new project. 2.Use schematic design entry to draw the full adder circuit. 3.The circuitconsists of XOR, AND, and OR gates. 4.Compile the design, verify its functionality through simulation. 5.Implement the design on thetarget device and program it.
 
-Write the detailed procedure here
-
+Full Subtractor:
+1.Follow the same steps as for the full adder. 2.Draw the full subtractor circuit using schematic design. 3.The circuitincludes XOR, AND, OR gates to perform subtraction. 4.Compile, simulate, implement, and program the design similarly to the fulladder.
+```
+```
 **Program:**
 
 /* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
@@ -62,12 +66,12 @@ module full_adder (
     assign carry = (a & b) | (b & cin) | (a & cin); // Majority function for carry
 
 endmodule
-
-
+```
+```
 Developed by:PRAKASH V
 RegisterNumber:25018527
 */
-
+```
 **RTL Schematic**
 
 <img width="714" height="588" alt="Screenshot 2025-10-22 114913" src="https://github.com/user-attachments/assets/49da13c3-1fd3-4b25-b43c-311310ad1c5a" />
