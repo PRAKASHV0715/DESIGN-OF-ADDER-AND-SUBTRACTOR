@@ -38,18 +38,44 @@ Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
 
+<img width="736" height="561" alt="Screenshot 2025-10-22 115241" src="https://github.com/user-attachments/assets/25f68a33-a5b0-40fb-b4a1-aa78e4e9afde" />
+
+
+<img width="732" height="687" alt="Screenshot 2025-10-22 115302" src="https://github.com/user-attachments/assets/59ccafa7-fef7-4ac0-b20f-91fae5048b62" />
+
+
 **Procedure**
 
 Write the detailed procedure here
-
+```
 **Program:**
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
+
+// Full Adder in Verilog
+module full_adder (
+    input  wire a, b, cin,   // Inputs
+    output wire sum, carry   // Outputs
+);
+
+    // Logic equations
+    assign sum   = a ^ b ^ cin;                  // XOR for sum
+    assign carry = (a & b) | (b & cin) | (a & cin); // Majority function for carry
+
+endmodule
+```
+
+Developed by:PRAKASH V
+RegisterNumber:25018527
 */
 
 **RTL Schematic**
 
+<img width="714" height="588" alt="Screenshot 2025-10-22 114913" src="https://github.com/user-attachments/assets/5e88f840-ed59-4e05-93bc-7ecf2007fdc1" />
+
 **Output Timing Waveform**
+
+<img width="1204" height="252" alt="Screenshot 2025-10-22 114954" src="https://github.com/user-attachments/assets/9ac2dd39-8f7b-4410-8db5-12848bb4beea" />
 
 **Result:**
 
